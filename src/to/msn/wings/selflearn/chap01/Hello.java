@@ -51,23 +51,32 @@ public class Hello {
           }
           System.out.println();
           System.out.println(array.length);
-          
+
           int[] scores = {20,30,33,44};
             for (int value : scores) {
             	System.out.println(value);
             }
-           
+
            int [] array2 = {100,20,300,500};
              for(int i = 0; i<array2.length; i++) {
             	 System.out.println(array2[i]);
              }
-             
+
              int[] array3;
              array3 = new int[5];
-             
+
              System.out.println(array3[0]);
              System.out.println(array3.length);
-             
+
+             int[] array4 = {1,3,5,7,9};
+             String text = "件目：";
+
+             for(int i = 0;i<array4.length;i++) {
+            	 System.out.println(i + 1 + text + array4[i]);
+             }
+
+
+
 
 
 //          int loopMax = 5;
