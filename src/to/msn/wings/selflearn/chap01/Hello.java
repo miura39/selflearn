@@ -90,6 +90,22 @@ public class Hello {
             		 System.out.println(array6[i]+"点ー＞不合格");
             	 }
              }
+             
+             String sympol = "*";
+             for(int i = 0; i < 5; i++) {
+            	 for(int j = 0; j< 1+i; j++) {
+            		 System.out.print(sympol);
+            	 }
+            	 System.out.println();
+             }
+             
+             String sympol2 = "*";
+             for(int i = 0; i < 5; i++) {
+            	 for(int j = 4; j>i-1; j--) {
+            		 System.out.print(sympol2);
+            	 }
+            	 System.out.println();
+             }
 
 
 
