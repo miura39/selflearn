@@ -74,6 +74,14 @@ public class Hello {
              for(int i = 0;i<array4.length;i++) {
             	 System.out.println(i + 1 + text + array4[i]);
              }
+             
+             int[] array5 = {1,2,5,8,9};
+             for(int i = 0;i<array5.length;i++) {
+            	 if(array5[i]%2==0) {
+            		 System.out.println(array5[i]);
+            	 }
+             }
+            
 
 
 
