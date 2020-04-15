@@ -147,6 +147,19 @@ public class Hello {
              for (int i =0; i<mtrx.length; i++) {
 //            	 System.out.println(mtrx[1][2]);
              }
+             int num1 = 10;
+             int num2 = 3;
+
+
+             Sub calc = new Sub();
+             Sub value = calc.calcMethod(num1,num2);
+
+             System.out.println("加算結果は　" + value.addResult);
+             System.out.println("減算結果は　" + value.subResult);
+             System.out.println("乗算結果は　" + value.multiResult);
+             System.out.println("除算結果は　" + value.divResult);
+             System.out.println("剰余算結果は" + value.remResult);
+
 
     }
 
@@ -158,5 +171,27 @@ public class Hello {
 		System.out.println("名前は"+a+c);
 		System.out.println("年齢は"+b+"歳");
 	}
+
+
+
+	}
+
+class Sub{
+
+    int addResult;
+    int subResult;
+    int multiResult;
+    int divResult;
+    int remResult;
+
+    public Sub calcMethod(int num1,int num2) {
+    	Sub calc = new Sub();
+    	calc.addResult = num1 + num2;
+    	calc.subResult = num1 - num2;
+    	calc.multiResult = num1 * num2;
+    	calc.divResult = num1 / num2;
+    	calc.remResult = num1 % num2;
+    	return calc;
+    }
 }
 
