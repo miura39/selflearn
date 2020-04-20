@@ -19,7 +19,7 @@ public class TestA {
 	public String gettestAstudentName() {
 		return testAstudentName;
 	}
-	public void setTestAstudent(String testAstudentName) {
+	public void setTestAstudentName(String testAstudentName) {
 		this.testAstudentName = testAstudentName;
 	}
 
