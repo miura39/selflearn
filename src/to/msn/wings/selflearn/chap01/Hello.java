@@ -1,5 +1,4 @@
 package to.msn.wings.selflearn.chap01;
-
 import java.time.LocalDateTime;
 
 public class Hello {
@@ -159,6 +158,15 @@ public class Hello {
              System.out.println("乗算結果は　" + value.multiResult);
              System.out.println("除算結果は　" + value.divResult);
              System.out.println("剰余算結果は" + value.remResult);
+             
+             int testData1 = 200;
+             int testData2 = 500;
+             int testData3 = 5000;
+             
+              int[] fee = {120,140,205,250,400,600,870,1180};
+              int[] wightGrams = {50,100,205,250,400,600,870,1180};
+              
+             
 
 
     }
