@@ -13,8 +13,8 @@ public class TestB {
 		str.setTestAscience(40);
 
 	System.out.println(
-					"学籍番号は"+ str.gettestAstudentNo() + "点です"
-					+"\n氏　　名は"+ str.gettestAstudentName() + "点です"
+					"学籍番号は"+ str.gettestAstudentNo() + "です"
+					+"\n氏　　名は"+ str.gettestAstudentName() + "です"
 					+"\n数　　学は"+ str.gettestAmath() + "点です"
 					+"\n英　　語は"+ str.gettestAenglish() +"点です"
 					+"\n国　　語は"+ str.gettestAjapanese() + "点です"
