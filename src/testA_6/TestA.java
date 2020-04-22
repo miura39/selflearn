@@ -1,15 +1,22 @@
 package testA_6;
 
 public class TestA {
-
 	private String testAstudentNo;
 	private String testAstudentName;
 	private int testAmath;
 	private int testAenglish;
 	private int testAjapanese;
 	private int testAscience;
-
-
+	//引数なしコンストラクタ
+	public TestA() {
+		this.testAstudentNo = "";
+		this.testAstudentName = "";
+		this.testAmath = 0;
+		this.testAenglish = 0;
+		this.testAjapanese = 0;
+		this.testAscience = 0;	
+	}
+	//引数ありコンストラクタ
 	public TestA(String testAstudentNo,
 				 String testAstudentName,
 				 int testAmath,
@@ -34,7 +41,8 @@ public class TestA {
 	System.out.println("国　　語は　"+gettestAjapanese());
 	System.out.println("科　　学は　"+gettestAscience());
 }
-
+	//privateフィールドのデータを元に戻すメソッドgetterを利用＝カプセル化
+	//privateフィールドのデータを設定するsetterメソッドを利用＝カプセル化
 	public String gettestAstudentNo() {
 		return testAstudentNo;
 	}
