@@ -10,6 +10,8 @@ public class TestB {
 					   new TestA("E01","Beddtty",85,90,80,100),
 					   new TestA("E01","Beddstty",85,90,80,100)
 					};
+		
+		
 
 		for(int i = 0;i<str.length;i++) {
 			System.out.println(str[i]);
