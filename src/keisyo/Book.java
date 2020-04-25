@@ -8,19 +8,26 @@ public class Book extends Magazine {
 	private String pubister; //出版社
 	private int price; //価格
 
+	private Magazine magazine=null;
+
 	//引数なしのコンストラクタ
 	public Book() {
 	}
 
 	//引数ありのコンストラクタ
-	public Book(String field,String frequency,String isbn,
-			String bookName,String author,String pubisher, int price) {
+	public Book(String isbn,String bookName,String author,String pubisher, int price) {
 		super.field = field;
 		super.frequency = frequency;
 		this.isbn = isbn;
 		this.bookName = bookName;
 		this.author = author;
+		this.price = price;
+		//部分クラスをインスタンス化
+		this.Magazine = new Magazine(field,frequency);
+
 	}
+
+
 	//メニュー　→　ソース　→　getter setterの生成
 	public String getIsbn() {
 		return isbn;
