@@ -4,7 +4,7 @@ public class Magazine {
 	//フィールド宣言
 	private String field;
 	private String frequency;
-
+	
 	//引数なしコンストラクタ
 	public Magazine() {
 	}
@@ -13,6 +13,7 @@ public class Magazine {
 		this.field = field;
 		this.frequency = frequency;
 	}
+	
 	//メニュー　→　ソース　→　getter setterの生成
 	public String getField() {
 		return field;
