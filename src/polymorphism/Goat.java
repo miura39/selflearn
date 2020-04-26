@@ -1,4 +1,4 @@
-package polymophism;
+package polymorphism;
 
 public class Goat {
 
