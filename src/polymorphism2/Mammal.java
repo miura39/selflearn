@@ -1,5 +1,8 @@
 package polymorphism2;
 
-public class Mammal {
+//interfaceをスーパークラスへ記述
+public interface Mammal {
+	//抽象メソッド
+	public abstract void animalName();
 
 }
