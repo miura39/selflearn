@@ -3,7 +3,12 @@ package polymorphism;
 public class UseMammal {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
+
+		Mammal mammal =null;
+		mammal = new Lion();
+		mammal = new Goat();
+
+		mammal.text();
 
 	}
 
