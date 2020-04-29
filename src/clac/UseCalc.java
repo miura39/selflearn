@@ -4,7 +4,7 @@ import calcsecond.CalcLogicSecond;
 
 public class UseCalc {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		int a = 10;
 		int b = 3;
 		//足すクラスのメソッドの利用
@@ -17,5 +17,6 @@ public class UseCalc {
 		System.out.println("足すと" + total + "、引くと" + delta);
 		//結果：掛け算すると30
 		System.out.println("掛け算すると" + mul);
+		CalcLogic.showMessage();
 	}
 }
