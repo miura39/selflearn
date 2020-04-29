@@ -18,7 +18,13 @@ public class Usemain {
 		System.out.println(add(5.5,10.5));//結果：16.0
 		//三つ目のaddメソッド
 		System.out.println(add("OK","NG"));//結果：OKNG
+		//配列printArrayメソッド
+		int[] array = {1, 2, 3};
+		//配列を渡す
+		printArray(array);//結果：123
 	}
+
+
 		//一つ目のaddメソッド
 		public static int add(int x,int y) {
 			int ans = x + y;
@@ -31,5 +37,11 @@ public class Usemain {
 		//三つ目のaddメソッド
 		public static String add(String x, String y) {
 			return x + y;
+		}
+		//int型配列を受け取り、全ての要素を表示するメソッド
+		public static void printArray(int[] array) {
+			for(int element : array) {
+				System.out.print(element);//printは改行しない
+			}
 		}
 }
