@@ -17,11 +17,11 @@ public class UseRecord {
 		textsList.put("4A",new Record("4A","Betty",85,90,80,100));
 		textsList.put("5A",new Record("5A","Betty",85,90,80,100));
 
-		//入力メソッド
+		//入力メソッド（後で修正する）
 		NotExistException input = new NotExistException("");
-		input.StudentName();
+		NotExistException value = input.StudentName();
 
-		String nameNo = StudentName();
+		String nameNo = ;
 		//
 		System.out.println(textsList.get(nameNo));
 	}

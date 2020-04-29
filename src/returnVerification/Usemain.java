@@ -3,8 +3,13 @@ package returnVerification;
 public class Usemain {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
+
+		int ans = add(100,10);
+		System.out.println(" x + y "+ ans);
 
 	}
-
+		public static int add(int x,int y) {
+			int ans = x + y;
+			return ans;
+		}
 }
