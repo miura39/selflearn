@@ -19,14 +19,16 @@ public class Usemain {
 		//三つ目のaddメソッド
 		System.out.println(add("OK","NG"));//結果：OKNG
 	}
+		//一つ目のaddメソッド
 		public static int add(int x,int y) {
-			//一つ目のaddメソッド
 			int ans = x + y;
 			return ans;
 		}
+		//二つ目のaddメソッド
 		public static double add(double x, double y) {
 			return x + y;
 		}
+		//三つ目のaddメソッド
 		public static String add(String x, String y) {
 			return x + y;
 		}
