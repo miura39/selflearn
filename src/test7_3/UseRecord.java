@@ -17,9 +17,12 @@ public class UseRecord {
 		textsList.put("4A",new Record("4A","Betty",85,90,80,100));
 		textsList.put("5A",new Record("5A","Betty",85,90,80,100));
 
-		//HashMapの拡張for文（出力順番はバラバラになってOK）
-		for(String text:textsList.keySet()) {
-			System.out.println(textsList.get(text));
-		}
+		//入力メソッド
+		NotExistException input = new NotExistException("");
+		input.StudentName();
+
+		String nameNo = StudentName();
+		//
+		System.out.println(textsList.get(nameNo));
 	}
 }
