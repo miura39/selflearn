@@ -20,8 +20,14 @@ public class Usemain {
 		System.out.println(add("OK","NG"));//結果：OKNG
 		//配列printArrayメソッド
 		int[] array = {1, 2, 3};
-		//配列を渡す
-		printArray(array);//結果：123
+			//配列を渡す
+			printArray(array);//結果：123
+		//newArrayを受け取る
+		int[] array2 = makeArray(3);
+		for(int i : array2) {
+			System.out.print(i);//結果：012
+		}
+		System.out.println();//次のメソッドのために改行しておく
 	}
 
 
@@ -39,9 +45,20 @@ public class Usemain {
 			return x + y;
 		}
 		//int型配列を受け取り、全ての要素を表示するメソッド
-		public static void printArray(int[] array) {
+		public static void printArray(int[] array) { //arrayの参照が作られる
+			//拡張for文の利用
 			for(int element : array) {
 				System.out.print(element);//printは改行しない
 			}
+			System.out.println();//次のメソッドのために改行しておく
+		}
+		//戻り値が配列の場合
+		public static int[] makeArray(int size) {
+			int[] newArray = new int[size];
+			for(int i= 0; i < newArray.length; i++) {
+				newArray[i] = i;
+			}
+			//returnでmainに配列を戻す（配列の戻り値）
+			return newArray;
 		}
 }
