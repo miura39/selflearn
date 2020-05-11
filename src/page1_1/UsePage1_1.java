@@ -23,12 +23,16 @@ import java.util.List;
 
 		// ステートメント生成
 		while(res.next()) {
-			String a = res.getString("product_code");
-			String b = res.getString("Order_no");
-			Integer c = res.getInt("Order_branch_no");
-			Integer d = res.getInt("Quantity");
-			Integer e = res.getInt("Coupon_discount_fee");
-			Recode order = new Recode(a, b, c, d, e);
+//			String a = res.getString("product_code");
+//			String b = res.getString("Order_no");
+//			Integer c = res.getInt("Order_branch_no");
+//			Integer d = res.getInt("Quantity");
+//			Integer e = res.getInt("Coupon_discount_fee");
+			Recode order = new Recode(res.getString("product_code"),
+									  res.getString("Order_no"),
+									  res.getInt("Order_branch_no"),
+									  res.getInt("Quantity"),
+									  res.getInt("Coupon_discount_fee"));
 			orderList.add(order);
 		}
 
